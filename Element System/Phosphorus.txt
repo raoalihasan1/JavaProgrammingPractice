@@ -1,0 +1,6 @@
+{
+	"atomicNumber": 15,
+	"bondsWith": ["Cl", "H"],
+	"name": "Phosphorus",
+	"symbol": "P"
+}
