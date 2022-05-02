@@ -15,7 +15,6 @@ public class Feed implements Runnable {
           "Fifth Headline",
           "Sixth Headline",
           "Seventh Headline",
-
         };
 
         for (String hl : Headlines){
