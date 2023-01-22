@@ -1,32 +1,26 @@
 import java.util.*;
 
-public class Queue 
-{
+public class Queue {
 
     private ArrayList<String> myQueue = new ArrayList<>();
 
-    public ArrayList getQueue()
-    {
+    public ArrayList<String> getQueue() {
         return myQueue;
     }
 
-    public void Add(String s)
-    {
+    public void Add(String s) {
         myQueue.add(s);
     }
 
-    public String Remove()
-    {
+    public String Remove() {
         return myQueue.remove(0);
     }
 
-    public String Peek()
-    {
+    public String Peek() {
         return myQueue.get(0);
     }
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         Queue myQueue = new Queue();
         myQueue.Add("Red");
         myQueue.Add("Orange");
@@ -36,8 +30,7 @@ public class Queue
         myQueue.Add("Brown");
         myQueue.Add("Silver");
         System.out.println("================================");
-        for(int i = 0; i < myQueue.getQueue().size(); i++)
-        {
+        for (int i = 0; i < myQueue.getQueue().size(); i++) {
             System.out.println("Queue Item " + (i + 1) + ": " + myQueue.getQueue().get(i));
         }
         System.out.println("================================");
