@@ -1,50 +1,40 @@
 import java.util.*;
 
-public class Stack
-{
+public class Stack {
 
     private ArrayList<String> myStack = new ArrayList<>();
 
-    public ArrayList getStack()
-    {
+    public ArrayList<String> getStack() {
         return myStack;
     }
 
-    public void Push(String s)
-    {
+    public void Push(String s) {
         myStack.add(s);
     }
 
-    public String Pop()
-    {
-        return myStack.remove(myStack.size()-1);
+    public String Pop() {
+        return myStack.remove(myStack.size() - 1);
     }
 
-    public String Peek()
-    {
-        return myStack.get(myStack.size()-1);
+    public String Peek() {
+        return myStack.get(myStack.size() - 1);
     }
 
-    public int Search(String s)
-    {
+    public int Search(String s) {
         int x = 0;
-        for (int i = myStack.size()-1; i >= 0; i--)
-        {
-            if (myStack.get(i).equals(s))
-            {
+        for (int i = myStack.size() - 1; i >= 0; i--) {
+            if (myStack.get(i).equals(s)) {
                 break;
             }
             x++;
         }
-        if(x == myStack.size())
-        {
+        if (x == myStack.size()) {
             return -1;
         }
         return x;
     }
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         Stack myStack = new Stack();
         myStack.Push("Bread");
         myStack.Push("Milk");
@@ -52,8 +42,7 @@ public class Stack
         myStack.Push("Chicken");
         myStack.Push("Chocolate");
         System.out.println("================================");
-        for(int i = 0; i < myStack.getStack().size(); i++)
-        {
+        for (int i = 0; i < myStack.getStack().size(); i++) {
             System.out.println("Pushed Item " + (i + 1) + ": " + myStack.getStack().get(i));
         }
         System.out.println("================================");
@@ -63,8 +52,7 @@ public class Stack
         myStack.Push("Biscuit");
         myStack.Push("Chicken");
         System.out.println("================================");
-        for(int i = 0; i < myStack.getStack().size(); i++)
-        {
+        for (int i = 0; i < myStack.getStack().size(); i++) {
             System.out.println("Pushed Item " + (i + 1) + ": " + myStack.getStack().get(i));
         }
         System.out.println("================================");
