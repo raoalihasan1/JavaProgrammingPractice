@@ -46,7 +46,7 @@ public class dayNight extends Application {
     vBox.setMargin(circ, new Insets(0, 0, initialInsetCirc, initialInsetCirc2));
 
     square.setOnMouseClicked(e -> {
-      if(darkMode){
+      if (darkMode) {
         rect.setFill(Color.web("#7EC850"));
         triangle.setFill(Color.web("#FF7F7F"));
         circ.setFill(Color.web("#F9D71C"));
@@ -64,12 +64,12 @@ public class dayNight extends Application {
     Scene gameScene = new Scene(vBox, 355, 405);
 
     gameScene.setOnKeyPressed(e -> {
-      if(e.getCode() == KeyCode.EQUALS){
+      if (e.getCode() == KeyCode.EQUALS) {
         circ.setRadius(initialRadius++);
         rect.setHeight(initialHeight--);
         vBox.setMargin(circ, new Insets(0, 0, initialInsetCirc--, initialInsetCirc2--));
         vBox.setMargin(rect, new Insets(0, 0, initialInsetRect--, 0));
-      } else if(e.getCode() == KeyCode.MINUS){
+      } else if (e.getCode() == KeyCode.MINUS) {
         rect.setHeight(initialHeight++);
         circ.setRadius(initialRadius--);
         vBox.setMargin(circ, new Insets(0, 0, initialInsetCirc++, initialInsetCirc2++));
