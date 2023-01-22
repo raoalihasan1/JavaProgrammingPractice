@@ -106,6 +106,7 @@ public class Bank {
                     System.out.println();
                     System.exit(0);
             }
+            mainInput.close();
         } catch (InputMismatchException e) {
             displayOptions();
         }
